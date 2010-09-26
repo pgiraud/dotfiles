@@ -65,3 +65,8 @@ nnoremap <right> <nop>
 " And make them fucking work, too.
 nnoremap j gj
 nnoremap k gk
+
+" Fuck you, help key.
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
