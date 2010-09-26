@@ -55,3 +55,13 @@ set listchars=tab:▸\
 
 " Color scheme (terminal)
 syntax on
+
+" Use the damn hjkl keys, never use the arrow keys ! Never ever !
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+" And make them fucking work, too.
+nnoremap j gj
+nnoremap k gk
