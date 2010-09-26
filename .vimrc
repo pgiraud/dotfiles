@@ -70,3 +70,6 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+" Save when losing focus
+au FocusLost * :wa
