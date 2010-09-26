@@ -29,3 +29,17 @@ set laststatus=2
 
 " Leader
 let mapleader = ","
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+set gdefault
+map <leader><space> :noh<cr>
+runtime macros/matchit.vim
+nmap <tab> %
+vmap <tab> %
