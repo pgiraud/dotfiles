@@ -73,3 +73,6 @@ vnoremap <F1> <ESC>
 
 " Save when losing focus
 au FocusLost * :wa
+
+" Easier linewise reselection
+map <leader>v V`]
