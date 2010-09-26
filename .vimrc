@@ -53,3 +53,5 @@ set formatoptions=qrn1
 set list
 set listchars=tab:▸\
 
+" Color scheme (terminal)
+syntax on
