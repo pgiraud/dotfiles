@@ -43,3 +43,9 @@ map <leader><space> :noh<cr>
 runtime macros/matchit.vim
 nmap <tab> %
 vmap <tab> %
+
+" Soft/hard wrapping
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
