@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/jslint"]
+	path = .vim/bundle/jslint
+	url = git://github.com/hallettj/jslint.vim.git
