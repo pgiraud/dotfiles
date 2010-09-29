@@ -90,3 +90,15 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Insert <Tab> or complete identifier
+" if the cursor is after a keyword character
+function MyTabOrComplete()
+    let col = col('.')-1
+    if !col || getline('.')[col-1] !~ '\k'
+         return "\<tab>"
+    else
+         return "\<C-N>"
+    endif
+endfunction
+inoremap <Tab> <C-R>=MyTabOrComplete()<CR>
