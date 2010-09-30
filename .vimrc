@@ -107,3 +107,6 @@ function MyTabOrComplete()
     endif
 endfunction
 inoremap <Tab> <C-R>=MyTabOrComplete()<CR>
+
+" 256 colors, required for the Molokai scheme
+set t_Co=256
