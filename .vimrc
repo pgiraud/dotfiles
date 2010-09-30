@@ -4,6 +4,14 @@ filetype plugin indent on
 
 set nocompatible
 
+
+" appearance options
+set bg=dark
+let g:zenburn_high_Contrast = 1
+let g:molokai_original = 1
+set t_Co=256
+colorscheme molokai
+
 " Security
 set modelines=0
 
@@ -107,6 +115,3 @@ function MyTabOrComplete()
     endif
 endfunction
 inoremap <Tab> <C-R>=MyTabOrComplete()<CR>
-
-" 256 colors, required for the Molokai scheme
-set t_Co=256
