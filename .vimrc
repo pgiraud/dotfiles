@@ -114,6 +114,5 @@ endfunction
 inoremap <Tab> <C-R>=MyTabOrComplete()<CR>
 
 " text titles and doc helpers
-nnoremap <leader>1 yypVr=
-nnoremap <leader>2 yypVr-
-nnoremap <leader>3 I### <ESC>
+nnoremap <leader>& yypVr=
+nnoremap <leader>é yypVr-
