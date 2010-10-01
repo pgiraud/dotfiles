@@ -6,9 +6,6 @@ set nocompatible
 
 
 " appearance options
-set bg=dark
-let g:zenburn_high_Contrast = 1
-let g:molokai_original = 1
 set t_Co=256
 colorscheme molokai
 
