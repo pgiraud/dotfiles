@@ -218,5 +218,5 @@ if &t_Co > 255
    hi LineNr          ctermfg=250 ctermbg=234
    hi NonText         ctermfg=250 ctermbg=234
 
-   hi SpellBad        ctermbg=1 cterm=bold
+   hi SpellBad        ctermbg=238 cterm=bold
 end
