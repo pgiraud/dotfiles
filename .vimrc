@@ -103,7 +103,7 @@ map <C-l> <C-w>l
 
 " Insert <Tab> or complete identifier
 " if the cursor is after a keyword character
-function MyTabOrComplete()
+function! MyTabOrComplete()
     let col = col('.')-1
     if !col || getline('.')[col-1] !~ '\k'
          return "\<tab>"
