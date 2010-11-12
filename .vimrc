@@ -1,4 +1,4 @@
-filetype off
+
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
@@ -17,6 +17,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+" Special filetype conf
+au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Basic options
 set encoding=utf-8
@@ -98,8 +101,6 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " Easy splits navigation
 map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Insert <Tab> or complete identifier
@@ -120,3 +121,10 @@ nnoremap <leader>" yypVr-
 
 " Surround shortcut
 nmap <leader>& ysiw
+
+" Bubble single lines
+nmap <C-k> [e
+nmap <C-j> ]e
+" Bubble multiple lines
+vmap <C-k> [egv
+vmap <C-j> ]egv
