@@ -128,3 +128,6 @@ nmap <C-j> ]e
 " Bubble multiple lines
 vmap <C-k> [egv
 vmap <C-j> ]egv
+
+" yank and leave the cursor at the end of a visual selection
+:vnoremap gy y`> 
