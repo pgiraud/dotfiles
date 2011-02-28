@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/unimpaired"]
 	path = .vim/bundle/unimpaired
 	url = http://github.com/tpope/vim-unimpaired.git
+[submodule "command-t"]
+	path = command-t
+	url = git://git.wincent.com/command-t.git
