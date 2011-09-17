@@ -1,3 +1,7 @@
 [user]
 	name = Pierre GIRAUD
 	email = pierre.giraud@camptocamp.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
