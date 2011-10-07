@@ -31,3 +31,9 @@ fi
 alias git-co-externals='git svn show-externals | grep "^/" | sed "s|^/\([^ ]*\)\(.*\) \(.*\)|(mkdir -p \1 \&\& cd \1 \&\& if [ -d .svn ]; then echo \"svn up \2 \1\" \&\& svn up \2 ; else echo \"svn co \2 \3 \1\" \&\& svn co \2 \3 . ; fi)|" | sh'
 
 export LESS='-XFR'
+
+export TERM="xterm-256color"
+
+if [ -f ~/.bashrc_after ]; then
+    source ~/.bashrc_after
+fi
