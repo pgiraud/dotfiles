@@ -290,3 +290,5 @@ vmap <C-j> ]egv
 " yank and leave the cursor at the end of a visual selection
 :vnoremap gy y`> 
 
+" sudo save
+cmap w!! w !sudo tee % >/dev/null
