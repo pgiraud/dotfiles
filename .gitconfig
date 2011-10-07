@@ -5,3 +5,6 @@
     diff = auto
     status = auto
     branch = auto
+
+[core]
+    excludesfile = ~/.global_gitignore
