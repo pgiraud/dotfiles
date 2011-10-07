@@ -8,3 +8,15 @@
 
 [core]
     excludesfile = ~/.global_gitignore
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    lol = log --decorate --pretty=oneline --abbrev-commit --all --graph
+    addremove = !git add . && git ls-files --deleted | xargs git rm
+    fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
+    vim = ! sh -c 'vim `git fshow $1`' -
