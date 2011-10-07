@@ -4,6 +4,19 @@ filetype plugin indent on
 
 set nocompatible
 
+" Backups {{{
+if v:version >= 703
+    set undofile
+    set undodir=./.tmp,/tmp
+else
+    let g:gundo_disable = 1
+endif
+set backupdir=./.tmp,.,/tmp
+set directory=./.tmp,/tmp
+set history=500
+set undolevels=500
+" }}}
+
 " Statusline {{{
     " Functions {{{
         " Statusline updater {{{
