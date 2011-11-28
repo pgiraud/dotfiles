@@ -306,3 +306,6 @@ vmap <C-j> ]egv
 
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
+
+" Here are some abbreviations
+iabbrev cl console.log
