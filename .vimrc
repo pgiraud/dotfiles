@@ -346,6 +346,9 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+" From tab to vsplit
+nnoremap <c-w>V mAZZ<c-w>v`A
+
 " Insert <Tab> or complete identifier
 " if the cursor is after a keyword character
 function! MyTabOrComplete()
