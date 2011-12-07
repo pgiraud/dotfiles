@@ -192,46 +192,6 @@ function! PulseCursorLine()
     let old_hi = split(old_hi, '\n')[0]
     let old_hi = substitute(old_hi, 'xxx', '', '')
 
-    hi CursorLine guibg=#2a2a2a ctermbg=233
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#333333 ctermbg=235
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#3a3a3a ctermbg=237
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#444444 ctermbg=239
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#4a4a4a ctermbg=237
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#555555 ctermbg=235
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#3a3a3a ctermbg=237
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#444444 ctermbg=239
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#4a4a4a ctermbg=237
-    redraw
-    sleep 50m
-
-    hi CursorLine guibg=#555555 ctermbg=235
-    redraw
-    sleep 50m
-
     execute 'hi ' . old_hi
 
     windo set cursorline
