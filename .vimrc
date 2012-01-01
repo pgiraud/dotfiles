@@ -288,7 +288,6 @@ vnoremap <F1> <ESC>
 
 " Remapping esc key
 inoremap jk <esc>
-inoremap <esc> <nop>
 
 " Save when losing focus
 au FocusLost * :wa
