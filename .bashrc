@@ -4,9 +4,9 @@ export LESS='-q'
 export EDITOR=vim
 
 # You may uncomment the following lines if you want `ls' to be colorized:
-export LS_OPTIONS='--color=auto'
+export LS_OPTIONS='-G'
 export HISTCONTROL=ignoredups
-eval `dircolors`
+#eval `dircolors`
 alias ls='ls $LS_OPTIONS'
 alias l='ls $LS_OPTIONS -Fahl'
 
