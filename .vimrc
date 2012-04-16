@@ -342,3 +342,4 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Here are some abbreviations
 iabbrev cl console.log
+iabbrev f function
