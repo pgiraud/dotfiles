@@ -343,3 +343,7 @@ cmap w!! w !sudo tee % >/dev/null
 " Here are some abbreviations
 iabbrev cl console.log
 iabbrev f function
+
+" highlight characters over 80 characters
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
