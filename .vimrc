@@ -193,3 +193,6 @@ endif
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
+" strip all trailing whitespace in the current file
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
