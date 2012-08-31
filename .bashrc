@@ -46,3 +46,10 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
+
+# ensure $SSH_AUTH_SOCK is available at /tmp/ssh-agent-$USER-screen
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != "/tmp/ssh-agent-$USER-screen" ]
+then
+    rm -f /tmp/ssh-agent-$USER-screen
+    ln -sf "$SSH_AUTH_SOCK" "/tmp/ssh-agent-$USER-screen"
+fi
