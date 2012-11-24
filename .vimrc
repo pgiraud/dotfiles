@@ -254,3 +254,5 @@ hi def InterestingWord6 guifg=#000000 ctermfg=16 guibg=#ff2c4b ctermbg=195
 
 " }}}
 " }}}
+
+au BufNewFile,BufRead *.mako set filetype=html
