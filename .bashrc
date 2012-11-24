@@ -55,5 +55,3 @@ then
     rm -f /tmp/ssh-agent-$USER-screen
     ln -sf "$SSH_AUTH_SOCK" "/tmp/ssh-agent-$USER-screen"
 fi
-
-export PATH="~/bin"
