@@ -196,3 +196,6 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 " strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Use Node.js for JavaScript interpretation
+let $JS_CMD='node'
