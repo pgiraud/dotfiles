@@ -18,29 +18,6 @@ set history=500
 set undolevels=500
 " }}}
 
-" Pulse {{{
-function! PulseCursorLine()
-    let current_window = winnr()
-
-    windo set nocursorline
-    execute current_window . 'wincmd w'
-
-    setlocal cursorline
-
-    redir => old_hi
-        silent execute 'hi CursorLine'
-    redir END
-    let old_hi = split(old_hi, '\n')[0]
-    let old_hi = substitute(old_hi, 'xxx', '', '')
-
-    execute 'hi ' . old_hi
-
-    windo set cursorline
-    execute current_window . 'wincmd w'
-endfunction
-
-" }}}
-
 " appearance options
 set t_Co=256
 colorscheme molokai
@@ -92,10 +69,6 @@ map <leader><space> :noh<cr>:call clearmatches()<cr>
 runtime macros/matchit.vim
 nmap <tab> %
 vmap <tab> %
-" PulseCursorLine {{{
-nnoremap n nzzzv:call PulseCursorLine()<cr>
-nnoremap N Nzzzv:call PulseCursorLine()<cr>
-" }}}
 
 " Soft/hard wrapping
 set wrap
