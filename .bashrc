@@ -32,7 +32,13 @@ alias git-co-externals='git svn show-externals | grep "^/" | sed "s|^/\([^ ]*\)\
 
 export LESS='-XFR'
 
-export TERM="xterm-256color"
+# 256 colors
+if [[ ${TMUX} == '' ]]
+then
+    export TERM="xterm-256color"
+else
+    export TERM="screen-256color"
+fi
 
 if [ -f ~/.bashrc_after ]; then
     source ~/.bashrc_after
