@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/zencoding"]
 	path = .vim/bundle/zencoding
 	url = git@github.com:mattn/zencoding-vim.git
+[submodule ".vim/bundle/coloresque"]
+	path = .vim/bundle/coloresque
+	url = git@github.com:gorodinskiy/vim-coloresque.git
