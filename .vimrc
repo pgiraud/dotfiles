@@ -234,3 +234,6 @@ au BufNewFile,BufRead *.less set filetype=css
 
 " Fix the git-gutter column color
 hi clear SignColumn
+
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 238
