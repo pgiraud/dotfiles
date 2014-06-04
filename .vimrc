@@ -236,4 +236,4 @@ au BufNewFile,BufRead *.less set filetype=css
 hi clear SignColumn
 
 let g:indentLine_char = '|'
-let g:indentLine_color_term = 238
+let g:indentLine_color_term = 235
