@@ -1,15 +1,15 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "command-t"]
-	path = command-t
-	url = git://git.wincent.com/command-t.git
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
+	url = https://github.com/wincent/Command-T.git 
 [submodule ".vim/vim-easymotion"]
 	path = .vim/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
@@ -33,25 +33,25 @@
 	url = https://gist.github.com/1630581.git 
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
-	url = git://github.com/Raimondi/delimitMate.git
+	url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-abolish"]
 	path = .vim/bundle/vim-abolish
-	url = git://github.com/tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish.git
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 [submodule ".vim/bundle/vim-jade"]
 	path = .vim/bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
+	url = https://github.com/digitaltoad/vim-jade.git
 [submodule ".vim/bundle/zencoding"]
 	path = .vim/bundle/zencoding
-	url = git@github.com:mattn/zencoding-vim.git
+	url = https://github.com/mattn/zencoding-vim.git
 [submodule ".vim/bundle/coloresque"]
 	path = .vim/bundle/coloresque
-	url = git@github.com:gorodinskiy/vim-coloresque.git
+	url = https://github.com/gorodinskiy/vim-coloresque.git
 [submodule ".vim/bundle/vim-unimpaired"]
 	path = .vim/bundle/vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule ".vim/bundle/flake8-vim"]
 	path = .vim/bundle/flake8-vim
 	url = https://github.com/andviro/flake8-vim.git
