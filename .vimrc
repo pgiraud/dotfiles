@@ -235,4 +235,6 @@ au BufNewFile,BufRead *.mako set filetype=html
 hi clear SignColumn
 
 let g:indentLine_char = '|'
-let g:indentLine_color_term = 235
+let g:indentLine_color_term = 239
+let g:indentLine_color_dark = 4
+let g:indentLine_enabled = 1
