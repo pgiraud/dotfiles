@@ -236,3 +236,6 @@ hi clear SignColumn
 
 let g:indentLine_char = '|'
 let g:indentLine_color_term = 235
+
+" move close bracket to third line and put cursor at second line
+autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
