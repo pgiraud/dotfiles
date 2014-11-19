@@ -242,3 +242,4 @@ let g:indentLine_enabled = 1
 
 " move close bracket to third line and put cursor at second line
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
+autocmd FileType less inoremap {<CR> {<CR>}<Esc><S-o>
