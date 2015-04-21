@@ -43,9 +43,6 @@
 [submodule ".vim/bundle/vim-jade"]
 	path = .vim/bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
-[submodule ".vim/bundle/zencoding"]
-	path = .vim/bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule ".vim/bundle/coloresque"]
 	path = .vim/bundle/coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque.git
