@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/HTML-AutoCloseTag"]
 	path = .vim/bundle/HTML-AutoCloseTag
 	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
+[submodule ".vim/bundle/emmet-vim"]
+	path = .vim/bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
