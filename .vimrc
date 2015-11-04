@@ -243,3 +243,9 @@ let g:indentLine_enabled = 1
 " move close bracket to third line and put cursor at second line
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
 autocmd FileType less inoremap {<CR> {<CR>}<Esc><S-o>
+
+" Set some default values for indentation
+au FileType md setlocal ts=2 sts=2 sw=2 expandtab
+au FileType html setlocal ts=2 sts=2 sw=2 expandtab
+au FileType js setlocal ts=2 sts=2 sw=2 expandtab
+au FileType mako setlocal ts=2 sts=2 sw=2 expandtab
