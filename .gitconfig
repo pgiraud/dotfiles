@@ -1,6 +1,7 @@
 [user]
     name = Pierre GIRAUD
     email = pierre.giraud@camptocamp.com
+	signingkey = DAC52B77
 [color]
     diff = auto
     status = auto
