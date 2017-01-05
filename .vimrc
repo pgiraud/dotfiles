@@ -249,3 +249,7 @@ au FileType md setlocal ts=2 sts=2 sw=2 expandtab
 au FileType html setlocal ts=2 sts=2 sw=2 expandtab
 au FileType js setlocal ts=2 sts=2 sw=2 expandtab
 au FileType mako setlocal ts=2 sts=2 sw=2 expandtab
+
+" Change default vim update time
+" Useful for gitgutter
+set updatetime=250
