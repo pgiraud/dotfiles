@@ -21,7 +21,16 @@
     addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
     fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
     vim = ! sh -c 'vim `git fshow $1`' -
+
+    is-tracking = !git remote-branch 2>&1| grep -q /
+    last-commit = !xargs git show --format=format:'%at %H' -s | sort | tail -1 | cut -d ' ' -f 2
+    filter-remote = !git is-tracking && grep ' '$(git current-remote) || cat
+    filter-current = !git is-tracking && grep -v $(git remote-branch)\\$ || cat
     delete-merged-branches = !git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
+    # Lists remote branches
+    other-remote-branches = !git branch --remote | grep -v HEAD | git filter-current
+    # Returns the commit from which the branch has been created
+    fork-base = !git other-remote-branches | xargs --no-run-if-empty -l git merge-base HEAD | git last-commit
 
 [branch]
     autosetupmerge = false
