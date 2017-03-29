@@ -36,3 +36,6 @@
     autosetupmerge = false
 [push]
     default = nothing
+
+[commit]
+    gpgSign = true
