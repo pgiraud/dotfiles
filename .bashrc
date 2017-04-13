@@ -62,3 +62,6 @@ then
     rm -f /tmp/ssh-agent-$USER-screen
     ln -sf "$SSH_AUTH_SOCK" "/tmp/ssh-agent-$USER-screen"
 fi
+
+# webcam capture
+alias webcamshot='vlc -I dummy v4l2:///dev/video0 --video-filter scene --no-audio --scene-path . --scene-prefix image_prefix --scene-format png vlc://quit --run-time=1'
