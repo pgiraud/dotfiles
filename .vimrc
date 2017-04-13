@@ -253,3 +253,6 @@ au FileType mako setlocal ts=2 sts=2 sw=2 expandtab
 " Change default vim update time
 " Useful for gitgutter
 set updatetime=250
+
+" Disable auto folding in markdown
+let g:vim_markdown_folding_disabled = 1
