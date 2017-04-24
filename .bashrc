@@ -23,6 +23,10 @@ fi
 if [ -d ~/bin ] ; then
    PATH=~/bin:"${PATH}"
 fi
+# set PATH so it includes user's private bin if it exists
+if [ -d ~/.bin ] ; then
+   PATH=~/.bin:"${PATH}"
+fi
 
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion

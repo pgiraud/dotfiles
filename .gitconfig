@@ -6,6 +6,7 @@
     diff = auto
     status = auto
     branch = auto
+    interactive = auto
 
 [core]
     excludesfile = ~/.global_gitignore
@@ -39,3 +40,12 @@
 
 [commit]
     gpgSign = true
+
+[interactive]
+    diffFilter = diff-highlight
+
+
+[pager]
+    log = "diff-highlight | less"
+    show = "diff-highlight | less"
+    diff = "diff-highlight | less"
