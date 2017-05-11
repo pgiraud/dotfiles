@@ -256,3 +256,6 @@ set updatetime=250
 
 " Disable auto folding in markdown
 let g:vim_markdown_folding_disabled = 1
+
+" No python auto-folding
+let g:pymode_folding = 0
