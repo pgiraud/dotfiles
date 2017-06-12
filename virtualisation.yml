@@ -1,0 +1,69 @@
+---
+# Usage:
+# ansible-playbook virtualisation.yml --tags nfs --ask-sudo-pass -i localhost, --connection=local --diff
+# sudo exportfs -a
+# pager /etc/exports
+- name: Configuration hôte KVM
+  tags: kvm
+  hosts: all
+  become: yes
+  vars:
+    # À synchroniser avec lxc.yml
+    lxcbr0_ip: 192.168.122.1
+    lxc_ipnet: 192.168.122.0/24
+
+  tasks:
+  - name: paquets Debian
+    with_items:
+    - gnome-boxes
+    - libguestfs-tools
+    - nfs-kernel-server
+    - virt-manager
+    apt:
+      name: "{{ item }}"
+      state: latest
+    tags: nfs
+
+  - name: "configurer l'export de ~/work en NFS"
+    tags: nfs
+    blockinfile:
+      dest: /etc/exports
+      content: |
+        ## Partage dans le réseau .lxc
+        # fstab client: {{ lxcbr0_ip }}:/home/{{ ansible_env.SUDO_USER }}/work /usr/local/src nfs rw,relatime,vers=3,hard,proto=udp,timeo=11,retrans=3,sec=sys 0 0
+        "/home/{{ ansible_env.SUDO_USER }}/work" {{ lxc_ipnet }}(rw,no_subtree_check,all_squash,anonuid=1000,anongid=1000)
+    register: exports
+
+  - name: exporter les volumes NFS
+    tags: nfs
+    when: exports|changed
+    shell: exportfs -a
+
+  - name: autoriser à lancer des VM
+    user:
+      append: yes
+      user: "{{ ansible_env.SUDO_USER }}"
+      groups: libvirt-qemu
+
+  - name: créer /etc/qemu
+    file:
+      name: /etc/qemu
+      state: directory
+      owner: root
+      group: libvirt-qemu
+      mode: 0750
+
+  - name: autoriser les ponts aux utilisateurs
+    copy:
+      dest: /etc/qemu/bridge.conf
+      owner: root
+      group: libvirt-qemu
+      mode: 0640
+      content: |
+        allow lxcbr0
+        allow virbr0
+
+  - name: corriger les droits sur qemu-bridge-helper
+    file:
+      name: /usr/lib/qemu/qemu-bridge-helper
+      mode: "u=rws,g=rx,o=rx"
