@@ -161,6 +161,7 @@ iabbrev cl console.log
 
 if v:version >= 703
     set relativenumber
+    " Can be overwritten by max_line_width in editorconfig "
     set cc=80
     hi ColorColumn ctermbg=234
 endif
