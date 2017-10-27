@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule ".vim/bundle/jslint"]
-	path = .vim/bundle/jslint
-	url = https://github.com/hallettj/jslint.vim.git
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -88,3 +85,9 @@
 [submodule ".vim/bundle/Vim-Jinja2-Syntax"]
 	path = .vim/bundle/Vim-Jinja2-Syntax
 	url = git@github.com:Glench/Vim-Jinja2-Syntax.git
+[submodule "roles/deimosfr.lxc"]
+	path = roles/deimosfr.lxc
+	url = git@github.com:deimosfr/ansible-lxc.git
+[submodule ".vim/bundle/vim-jshint"]
+	path = .vim/bundle/vim-jshint
+	url = git@github.com:walm/jshint.vim.git
