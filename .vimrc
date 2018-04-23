@@ -166,9 +166,7 @@ if v:version >= 703
     hi ColorColumn ctermbg=234
 endif
 
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-let g:Powerline_symbols = 'fancy'
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+let g:airline_powerline_fonts = 1
 
 " strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>

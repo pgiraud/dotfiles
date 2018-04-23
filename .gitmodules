@@ -19,15 +19,9 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule ".vim/bundle/vim-powerline"]
-	path = .vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule ".vim/bundle/crtlp"]
 	path = .vim/bundle/crtlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".fonts/ttf-dejavu-powerline"]
-	path = .fonts/ttf-dejavu-powerline
-	url = https://gist.github.com/1630581.git 
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
@@ -91,3 +85,6 @@
 [submodule ".vim/bundle/vim-jshint"]
 	path = .vim/bundle/vim-jshint
 	url = git@github.com:walm/jshint.vim.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
