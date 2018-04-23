@@ -102,7 +102,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " Remapping esc key
-inoremap jk <esc>
+"inoremap jk <esc>
 
 " Save when losing focus
 au FocusLost * :wa
