@@ -82,9 +82,6 @@
 [submodule "roles/deimosfr.lxc"]
 	path = roles/deimosfr.lxc
 	url = git@github.com:deimosfr/ansible-lxc.git
-[submodule ".vim/bundle/vim-jshint"]
-	path = .vim/bundle/vim-jshint
-	url = git@github.com:walm/jshint.vim.git
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
