@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/crtlp"]
 	path = .vim/bundle/crtlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/delimitMate"]
-	path = .vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-abolish"]
 	path = .vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
