@@ -258,3 +258,6 @@ let g:vim_markdown_folding_disabled = 1
 
 " No python auto-folding
 let g:pymode_folding = 0
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
