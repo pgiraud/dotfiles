@@ -7,9 +7,6 @@
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule ".vim/bundle/command-t"]
-	path = .vim/bundle/command-t
-	url = https://github.com/wincent/Command-T.git 
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
