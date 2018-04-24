@@ -1,3 +1,7 @@
 *.sw?
 .netrwhist
 .vimrc
+
+# vim-plug should be automatically downloaded (via curl)
+.vim/autoload/plug.vim
+.vim/plugged
