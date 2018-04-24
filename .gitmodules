@@ -22,6 +22,9 @@
 [submodule ".vim/bundle/coloresque"]
 	path = .vim/bundle/coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque.git
+[submodule ".vim/bundle/vim-unimpaired"]
+	path = .vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule ".vim/bundle/indentLine"]
 	path = .vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
