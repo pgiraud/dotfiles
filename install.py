@@ -13,10 +13,13 @@ for f in os.listdir('.'):
         os.symlink(os.path.abspath(f), path)
         print 'create link for %s' % (path)
 
-f = 'nvim.init'
+# Symlink nvim config file
 path = os.path.expanduser('~/.config/nvim/init.vim')
+path_dir = os.path.dirname(path)
 if os.path.isfile(path) or os.path.isdir(path):
     os.unlink(path)
+if not os.path.exists(path_dir):
+    os.makedirs(path_dir)
 os.symlink(os.path.abspath('nvim.init'), path)
 
 # to get better colors in the terminal, launch the following command
