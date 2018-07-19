@@ -52,4 +52,4 @@
 [gpg]
 	program = gpg2
 [commit]
-    verbose = 2
+    verbose = 3
