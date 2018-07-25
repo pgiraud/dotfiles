@@ -238,6 +238,8 @@ let g:indentLine_color_term = 235
 let g:indentLine_color_term = 239
 let g:indentLine_color_dark = 4
 let g:indentLine_enabled = 1
+" don't collapse links in markdown
+let g:indentLine_setConceal = 0
 
 " move close bracket to third line and put cursor at second line
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
