@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/vim-hug-neovim-rpc"]
 	path = .vim/bundle/vim-hug-neovim-rpc
 	url = git@github.com:roxma/vim-hug-neovim-rpc.git
+[submodule ".vim/bundle/yapf"]
+	path = .vim/bundle/yapf
+	url = git@github.com:mindriot101/vim-yapf.git
