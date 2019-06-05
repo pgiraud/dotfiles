@@ -286,3 +286,6 @@ Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascr
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
+
+" Backup copy, avoid issues with webpack watching mechanism
+set backupcopy=yes
