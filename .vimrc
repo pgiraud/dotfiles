@@ -258,6 +258,9 @@ set updatetime=250
 " Disable auto folding in markdown
 let g:vim_markdown_folding_disabled = 1
 
+" Disable auto folding in vue
+let g:vim_vue_plugin_use_foldexpr=0
+
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 
