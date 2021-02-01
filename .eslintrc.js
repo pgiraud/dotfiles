@@ -4,7 +4,7 @@ module.exports = {
     "jquery": true,
     "commonjs": true
   },
-  "parser": "typescript-eslint-parser",
+  // "parser": "typescript-eslint-parser",
   "extends": "eslint:recommended",
   "rules": {
     "indent": [
