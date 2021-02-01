@@ -159,13 +159,6 @@ cmap w!! w !sudo tee % >/dev/null
 " Here are some abbreviations
 iabbrev cl console.log
 
-if v:version >= 703
-    set relativenumber
-    " Can be overwritten by max_line_width in editorconfig "
-    set cc=80
-    hi ColorColumn ctermbg=234
-endif
-
 let g:airline_powerline_fonts = 1
 
 " strip all trailing whitespace in the current file
