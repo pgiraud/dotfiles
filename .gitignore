@@ -9,3 +9,5 @@
 .venv/
 venv/
 __pycache__
+.tmux/plugins
+.tmux/resurrect
