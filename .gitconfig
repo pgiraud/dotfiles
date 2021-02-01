@@ -38,6 +38,9 @@
 [push]
     default = nothing
 
+[commit]
+    gpgSign = true
+
 [interactive]
     diffFilter = diff-highlight
 
@@ -46,5 +49,7 @@
     log = "diff-highlight | less"
     show = "diff-highlight | less"
     diff = "diff-highlight | less"
+[gpg]
+	program = gpg
 [commit]
     verbose = 3
