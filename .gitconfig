@@ -9,7 +9,7 @@
     interactive = auto
 
 [core]
-    excludesfile = ~/.global_gitignore
+	excludesfile = /home/pierre/.gitignore
 
 [alias]
     st = status
