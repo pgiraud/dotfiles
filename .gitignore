@@ -5,3 +5,7 @@
 # vim-plug should be automatically downloaded (via curl)
 .vim/autoload/plug.vim
 .vim/plugged
+
+.venv/
+venv/
+__pycache__
