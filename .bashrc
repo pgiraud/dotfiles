@@ -80,4 +80,4 @@ export PATH="$PATH:$(npm bin)"
 
 export POWERLINE_ICONS=nerd-fonts
 . ${HOME}/.config/powerline.bash
-alias cal="ncal -M -b"
+alias cal="ncal -B1 -A1 -Mbw"
