@@ -257,6 +257,9 @@ let g:vim_vue_plugin_use_foldexpr=0
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 
+nmap <silent> <leader>j <Plug>(ale_previous_wrap)
+nmap <silent> <leader>k <Plug>(ale_next_wrap)
+
 " install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs

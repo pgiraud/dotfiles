@@ -91,3 +91,6 @@
 [submodule ".vim/bundle/black"]
 	path = .vim/bundle/black
 	url = https://github.com/psf/black
+[submodule ".vim/bundle/vim-prettier"]
+	path = .vim/bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier
