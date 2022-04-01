@@ -256,6 +256,7 @@ let g:vim_vue_plugin_use_foldexpr=0
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers.python = ['black']
 
 nmap <silent> <leader>j <Plug>(ale_previous_wrap)
 nmap <silent> <leader>k <Plug>(ale_next_wrap)
@@ -288,3 +289,11 @@ let g:deoplete#enable_at_startup = 1
 
 " Backup copy, avoid issues with webpack watching mechanism
 set backupcopy=yes
+
+
+let g:black_quiet = 1
+" Run black on save
+autocmd BufWritePost *.py execute ':Black'
+
+" Run Black on <F9> key press
+nnoremap <F9> :Black<CR>
