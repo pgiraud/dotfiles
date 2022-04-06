@@ -53,3 +53,5 @@
 	program = gpg
 [commit]
     verbose = 3
+[fetch]
+	prune = true
