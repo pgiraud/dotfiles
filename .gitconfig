@@ -42,13 +42,13 @@
     gpgSign = true
 
 [interactive]
-    diffFilter = diff-highlight
+    diffFilter = colordiff
 
 
 [pager]
-    log = "diff-highlight | less"
-    show = "diff-highlight | less"
-    diff = "diff-highlight | less"
+    log = "colordiff | less"
+    show = "colordiff | less"
+    diff = "colordiff | less"
 [gpg]
 	program = gpg
 [commit]
