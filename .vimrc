@@ -291,8 +291,3 @@ let g:deoplete#enable_at_startup = 1
 
 " Backup copy, avoid issues with webpack watching mechanism
 set backupcopy=yes
-
-
-let g:black_quiet = 1
-" Run black on save
-autocmd BufWritePost *.py execute ':Black'
