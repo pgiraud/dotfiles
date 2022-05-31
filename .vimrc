@@ -284,6 +284,11 @@ endif
 " deoplete with javascript
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
 
+" CoC Conquer of Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-volar-tools', {'do': 'yarn install --frozen-lockfile'}
+
 " Initialize plugin system
 call plug#end()
 
