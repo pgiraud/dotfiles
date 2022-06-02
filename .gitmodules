@@ -79,12 +79,6 @@
 [submodule ".vim/bundle/yapf"]
 	path = .vim/bundle/yapf
 	url = git@github.com:mindriot101/vim-yapf.git
-[submodule ".vim/bundle/vim-vue"]
-	path = .vim/bundle/vim-vue
-	url = https://github.com/posva/vim-vue.git
-[submodule ".vim/bundle/vim-vue-plugin"]
-	path = .vim/bundle/vim-vue-plugin
-	url = https://github.com/leafOfTree/vim-vue-plugin
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git@github.com:davidhalter/jedi-vim.git
