@@ -1,2 +1,5 @@
 [*.py]
 max_line_length = 79
+
+[*.js]
+indent_size = 2
