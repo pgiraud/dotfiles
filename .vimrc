@@ -299,3 +299,6 @@ let g:deoplete#enable_at_startup = 1
 
 " Backup copy, avoid issues with webpack watching mechanism
 set backupcopy=yes
+
+" Spelling for commit messages
+autocmd FileType gitcommit setlocal spelllang=en spell
