@@ -256,6 +256,7 @@ let g:vim_vue_plugin_use_foldexpr=0
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['vue'] = ['prettier']
 
 " automatically fix files on save
 let g:ale_fix_on_save = 1
