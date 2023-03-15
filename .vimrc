@@ -290,9 +290,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-volar-tools', {'do': 'yarn install --frozen-lockfile'}
 
-" auto-pairs
-Plug 'jiangmiao/auto-pairs'
-
 " Initialize plugin system
 call plug#end()
 
