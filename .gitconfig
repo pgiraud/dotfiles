@@ -1,7 +1,7 @@
 [user]
     name = Pierre GIRAUD
     email = pierre.giraud@dalibo.com
-	signingkey = 2D3C1FBD8BA59F61
+    signingkey = 2D3C1FBD8BA59F61
 [color]
     diff = auto
     status = auto
@@ -10,6 +10,7 @@
 
 [core]
     excludesfile = ~/.gitignore
+    pager = delta
 
 [alias]
     st = status
@@ -42,16 +43,23 @@
     gpgSign = true
 
 [interactive]
-    diffFilter = colordiff
+    diffFilter = delta --color-only
 
-
-[pager]
-    log = "colordiff | less"
-    show = "colordiff | less"
-    diff = "colordiff | less"
 [gpg]
-	program = gpg
+    program = gpg
 [commit]
     verbose = 3
 [fetch]
-	prune = true
+    prune = true
+
+[merge]
+    conflictstyle = diff3
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    line-numbers = true
+    features = calochortus-lyallii 
+
+[include]
+    path = ~/themes.gitconfig
