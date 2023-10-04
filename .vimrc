@@ -143,6 +143,7 @@ nnoremap <leader>' yypVr~
 " Surround shortcut
 nmap <leader>& ysiw
 
+" Thanks to vim-unimpaired
 " Bubble single lines
 nmap <C-k> [e
 nmap <C-j> ]e
@@ -226,14 +227,6 @@ au BufNewFile,BufRead *.mako set filetype=html
 " Fix the git-gutter column color
 hi clear SignColumn
 
-let g:indentLine_char = '|'
-let g:indentLine_color_term = 235
-let g:indentLine_color_term = 239
-let g:indentLine_color_dark = 4
-let g:indentLine_enabled = 1
-" don't collapse links in markdown
-let g:indentLine_setConceal = 0
-
 " move close bracket to third line and put cursor at second line
 autocmd FileType javascript inoremap {<CR> {<CR>}<Esc><S-o>
 autocmd FileType less inoremap {<CR> {<CR>}<Esc><S-o>
@@ -301,6 +294,29 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+Plug 'airblade/vim-gitgutter'
+Plug 'davidhalter/jedi-vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'glench/vim-jinja2-syntax'
+Plug 'groenewege/vim-less'
+Plug 'haya14busa/incsearch.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
+Plug 'nvie/vim-flake8'
+Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'preservim/nerdcommenter'
+Plug 'prettier/vim-prettier'
+Plug 'psf/black'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-airline/vim-airline'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
