@@ -295,6 +295,13 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 map <C-p> :FZF <Enter>
 
+" NERDTree
+Plug 'preservim/nerdtree'
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 " Initialize plugin system
 call plug#end()
 
