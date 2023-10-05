@@ -15,7 +15,8 @@ set undolevels=500
 
 " appearance options
 set t_Co=256
-colorscheme molokai
+set background=dark
+autocmd vimenter * ++nested colorscheme solarized8
 
 " Security
 set modelines=0
