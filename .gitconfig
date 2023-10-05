@@ -19,7 +19,7 @@
     co = checkout
     df = diff
     lg = log -p
-    lol = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all --date=human
+    lol = log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) %C(green)(%ad)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all --date=human
     addremove = !git add . && git ls-files --deleted | xargs --no-run-if-empty git rm
     fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
     vim = ! sh -c 'vim `git fshow $1`' -
