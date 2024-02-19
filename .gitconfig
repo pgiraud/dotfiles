@@ -63,3 +63,6 @@
 
 [include]
     path = ~/themes.gitconfig
+[rerere]
+	enabled = true
+	autoUpdate = true
