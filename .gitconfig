@@ -36,6 +36,7 @@
 
 [branch]
     autosetupmerge = false
+    sort = -committerdate
 [push]
     default = nothing
 
