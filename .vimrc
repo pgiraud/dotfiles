@@ -262,18 +262,6 @@ endif
 
 call plug#begin()
 
-" deoplete
-if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-" deoplete with javascript
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
-
 " CoC Conquer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
@@ -317,8 +305,6 @@ Plug 'yaegassy/coc-ruff', {'do': 'yarn install --frozen-lockfile'}
 
 " Initialize plugin system
 call plug#end()
-
-let g:deoplete#enable_at_startup = 1
 
 " Backup copy, avoid issues with webpack watching mechanism
 set backupcopy=yes
