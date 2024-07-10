@@ -18,7 +18,7 @@ else
     setlocal path+=/usr/lib/python3/dist-packages
 endif
 
-let b:ale_linters = ['flake8', 'isort', 'mypy']
-let b:ale_fixers = ['autoflake', 'black', 'isort']
+let b:ale_linters = ['flake8', 'isort', 'mypy', 'ruff']
+let b:ale_fixers = ['autoflake', 'black', 'isort', 'ruff']
 let b:ale_python_mypy_options = '--strict --ignore-missing-imports'
 let b:ale_python_autoflake_options = '--remove-unused-variables'
