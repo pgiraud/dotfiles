@@ -1,0 +1,7 @@
+{
+  "ruff.autoFixOnSave": true,
+  "ruff.nativeServer": true,
+  "[python]": {
+    "coc.preferences.formatOnSave": true
+  }
+}
