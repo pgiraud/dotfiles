@@ -67,3 +67,10 @@
 [rerere]
 	enabled = true
 	autoUpdate = true
+
+[sendemail]
+    smtpserver = mail.dalibo.com
+    smtpuser = pierre.giraud@dalibo.com
+    smtpencryption = tls
+    smtpserverport = 2525
+    annotate = yes
