@@ -38,7 +38,7 @@
     autosetupmerge = false
     sort = -committerdate
 [push]
-    default = nothing
+	default = current
 
 [commit]
     gpgSign = true
