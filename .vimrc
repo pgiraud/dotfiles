@@ -321,3 +321,6 @@ set backupcopy=yes
 
 " Spelling for commit messages
 autocmd FileType gitcommit setlocal spelllang=en spell
+
+" Show illegal charachters
+set list listchars=tab:»\ ,trail:·,nbsp:⎵,precedes:<,extends:>
