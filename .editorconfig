@@ -1,5 +1,5 @@
 [*.py]
 max_line_length = 79
 
-[*.js]
+[*.{js,vue,ts}]
 indent_size = 2
