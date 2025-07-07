@@ -253,11 +253,6 @@ let g:vim_markdown_folding_disabled = 1
 " Disable auto folding in vue
 let g:vim_vue_plugin_use_foldexpr=0
 
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['prettier']
-let g:ale_fixers['typescript'] = ['prettier']
-let g:ale_fixers['vue'] = ['prettier']
-
 " automatically fix files on save
 let g:ale_fix_on_save = 1
 
