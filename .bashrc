@@ -75,4 +75,8 @@ export NVM_DIR="$HOME/.nvm"
 export POWERLINE_ICONS=nerd-fonts
 . ${HOME}/.config/powerline.bash
 alias cal="ncal -B1 -A1 -Mbw"
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
