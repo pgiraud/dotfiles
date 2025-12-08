@@ -35,10 +35,11 @@
     fork-base = !git other-remote-branches | xargs --no-run-if-empty -l git merge-base HEAD | git last-commit
 
 [branch]
-    autosetupmerge = false
+    autosetupmerge = true
     sort = -committerdate
 [push]
 	default = current
+	autoSetupRemote = true
 
 [commit]
     gpgSign = true
