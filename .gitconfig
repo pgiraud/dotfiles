@@ -75,3 +75,5 @@
     smtpencryption = tls
     smtpserverport = 2525
     annotate = yes
+[init]
+	defaultBranch = main
