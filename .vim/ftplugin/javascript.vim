@@ -1,2 +1,2 @@
-let b:ale_linters = ['eslint', 'biome', 'vls']
-let b:ale_fixers = ['biome']
+let b:ale_linters = ['eslint', 'biome']
+let b:ale_fixers = ['biome', 'eslint']
