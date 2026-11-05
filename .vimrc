@@ -46,7 +46,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set pastetoggle=<F2>
+"set pastetoggle=<F2>  # not supported by neovim
 
 " Leader
 let mapleader = ","

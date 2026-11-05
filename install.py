@@ -23,7 +23,7 @@ def symlink(target, source):
         os.makedirs(path_dir)
     os.symlink(os.path.abspath(source), path)
 
-symlink('~/.config/nvim/init.vim', 'nvim.init')
+symlink('~/.config/nvim/init.lua', 'nvim.lua')
 symlink('~/.config/powerline.bash', 'powerline.bash')
 symlink('~/.config/fish', 'fish')
 
