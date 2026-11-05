@@ -286,7 +286,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 Plug 'airblade/vim-gitgutter'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim' # needs python3 provider support for NeoVIM
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'glench/vim-jinja2-syntax'
