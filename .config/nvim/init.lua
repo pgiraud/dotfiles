@@ -36,3 +36,13 @@ vim.diagnostic.config({
         prefix = "",
     },
 })
+
+
+vim.opt.termguicolors = false
+
+vim.api.nvim_create_autocmd('ColorScheme', {
+  pattern = '*',
+  callback = function()
+    vim.cmd('hi StatusLine gui=NONE cterm=NONE guifg=#073642 guibg=#839496 ctermfg=236 ctermbg=246')
+  end,
+})
