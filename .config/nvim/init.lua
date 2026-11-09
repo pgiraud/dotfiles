@@ -37,6 +37,18 @@ vim.diagnostic.config({
     },
 })
 
+-- Show diagnostics automatically when cursor stops
+vim.o.updatetime = 500
+
+vim.api.nvim_create_autocmd("CursorHold", {
+    callback = function()
+        vim.diagnostic.open_float()
+    end,
+})
+
+-- Jump to next diagnostic error
+vim.keymap.set("n", "<leader>k", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+
 
 vim.opt.termguicolors = false
 
